@@ -1,0 +1,21 @@
+from typing import List
+
+class Solution:
+    def topKFrequent(self, nums=[1,2,2,3,3,3], k = 2) -> List[int]:
+        elem_freq = [[] for i in range (len(nums)+1)]
+        count = {}
+        print(nums)
+
+        for num in nums:
+            count[num] = 1 + count.get(num, 0)
+
+
+        for elem, value in count.items():
+            elem_freq[value].append(elem)
+            
+if __name__ == "__main__":
+    sol = Solution()
+    print(sol.topKFrequent())
+    # Output: [3, 2]
+    # Explanation: The elements 2 and 3 are the two most frequent elements. 
+    # 2 appears twice and 3 appears three times.
