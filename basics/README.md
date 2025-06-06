@@ -11,4 +11,7 @@ This folder contains Python scripts and examples demonstrating fundamental conce
 - **Hands-on Examples:**
   Each script is designed to be self-explanatory with comments and print statements to illustrate key points.
 
+- **Linked List Implementation:**
+  Includes a singly linked list implementation with append, prepend, insert, pop, and traversal operations, along with unit tests.
+
 Feel free to explore the files to strengthen your understanding of Python basics!
