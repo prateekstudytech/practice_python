@@ -1,11 +1,13 @@
-def first_non_repeating_char(string):
-    ch_counts = {}
-    
-    for ch in string:
-        ch_counts[ch] = 1 + ch_counts.get(ch, 0)
-        if ch_counts[ch] > 1:
-            return ch
-    return None
+def findLastOccurence(A, B):
+        # code here
+        substring_len = len(B)
+        for i in range(len(A)-3, -1, -1):
+            print("i : ", i)
+            print(A[i:i+substring_len])
+            if A[i:i+substring_len] == B:
+                return i
+        return -1
 
-
-print( first_non_repeating_char('leetcode') )
+A = "abcdefghijklghifghsd"
+B = "ghi"
+findLastOccurence(A, B)
